@@ -19,6 +19,7 @@ $("#addQuery").on("click", function(event){
     buttonGenerate();
 });
 $(document).on("click",".terms", function(){
+    $("#imgDump").empty()
     var term = $(this).attr("data-term");
     console.log(term);
     var queryURL = "https://api.giphy.com/v1/gifs/search?q="+term+"&api_key=faVpcYpz55WtmrGnbEZLrtW06l9qyXdi&limit=10";
@@ -34,7 +35,7 @@ $(document).on("click",".terms", function(){
         var rating = $("<p>").text(imageSet[i].rating);
         var img = $("<img>").attr({
             "src": imageSet[i].images.fixed_height_still.url,
-            "class": "gifs",
+            "class": "gifs img-responsive",
             "data-still": imageSet[i].images.fixed_height_still.url,
             "data-active":imageSet[i].images.fixed_height.url,
             "data-state": "still"
