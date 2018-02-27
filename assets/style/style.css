@@ -8,6 +8,22 @@ body{
     background-image: url("../images/background.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+#head{
+    color: #337ab7;
+}
 p{
+    font-size: 200%;
     color: grey;
+}
+.btn{
+    color: #337ab7;
+    border-color: slategrey
+}
+#addQuery{
+    width: 100%;
+    color: black;
+}
+.gifDiv{
+    float: left;
+    padding: 5px
 }

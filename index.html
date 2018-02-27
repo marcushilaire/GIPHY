@@ -13,16 +13,21 @@
 <body>
 <div class="container">
     <div class="row">
-        <div id="buttonsDiv" class="col-xs-12 col-md-3"></div>
-        <div class="col-xs-12 col-md-4">
+        <div class="page-header">
+            <h1 id="head">Gifs Galore <small id="subHead"> Powered by GIPHY</small></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div id="buttonsDiv" class="col-xs-12 col-md-6"></div>
+        <div class="col-xs-12 col-md-6">
         <form id="movie-form">
-            <!-- <label for="search-input">Add a new Button</label> -->
-            <input type="text" id="inputQuery" placeholder="Find Gifs!">
-            <input id="addQuery" type="submit" value="Adda new Button">
+            <input type="text" id="inputQuery" placeholder="Find Gifs!" class="form-control">
+            <input id="addQuery" type="submit" class="btn btn-primary" value="Add a new Button">
         </form>
         </div>
-        <div id="imgDump" class="col-xs-12 col-md-4"></div>
+        
     </div>
+    <div id="imgDump" class="row"></div>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./assets/logic/logic.js"></script>
